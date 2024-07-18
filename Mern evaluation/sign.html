@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="home"> 
+    <a href="index.html"><button type="submit" style=" width: 40px;float: inline-end;height: 40px;border: 1px solid black; background-color: white; color: rgb(0, 0, 0); padding: 0px;margin-bottom: 15px;">X</button>
+    </a>
+    </div>
+    <form id="loginForm">
+        <div class="email">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="email">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="email">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms" class="terms">I agree to the terms and conditions</label>
+        </div>
+        <button type="submit">Submit</button>
+        <div class="email">
+            <a href="login.html"><p>Already have a Account</p></a>
+        </div>
+    </form>
+</div>
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        alert('Account created sucessfully');
+        window.location.href = 'index.html';  
+    });
+</script>
+
+</body>
+</html>

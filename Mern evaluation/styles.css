@@ -1,0 +1,233 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-image: url(/imges/background.jpg);
+    background-size:100%;
+}
+.nav{
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 90%;
+    height: 70px;
+    margin-top: 50px;
+    justify-content: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    float: left;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#ul1{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    width: 13%;
+    height: 70px;
+}
+#ul2{
+    display: flex;
+    list-style: none; 
+    justify-content: end;
+    width: 87%;
+    height: 70px;
+}
+.nav li{
+    justify-content: center;
+    padding: 20px;
+}
+#ul2 li:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(256,228,100);
+    transition: 0.5s;
+    cursor: pointer;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.89);
+    border-radius: 15px;
+}
+.booking{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.559);
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.booking ul{
+    list-style: none;
+}
+.booking li{
+    padding-top: 30px;
+}
+.end{
+    width: 100%;
+    height: 25vh;
+    justify-content: center; 
+}
+.end-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+.end-2{
+    width: 80%;
+    height: 500px;
+    margin-left: 10%;
+}
+.end-22{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "a b c d e";
+}
+.end-2-1{
+    grid-area: a;
+    background-color: rgba(76,78,77,255);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end-2-2{
+    grid-area: b;
+    background-color: rgba(76,78,77,255);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end-2-3{
+    grid-area: c;
+    background-color: rgba(76,78,77,255);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end-2-4{
+    grid-area: d;
+    background-color: rgba(76,78,77,255);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.end-2-5{
+    grid-area: e;
+    background-color: rgba(76,78,77,255);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end h1{
+    font-size: 30px;
+}
+.end-2-1:hover,.end-2-2:hover,.end-2-3:hover,.end-2-4:hover,.end-2-5:hover{
+    background-color: rgb(256,228,100);
+}
+.end-23{
+    background-image: url(imges/mon.png);
+    background-size: 100%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.end-24{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    width: 100%;
+    height: 100px;
+}
+.note{
+    width: 100%;
+    height: 800px;
+    background-color: rgba(244,244,244,255);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+    "f g h" 
+    "i j k";
+}
+.note1{
+    margin: 60px;
+    grid-area: f;
+    border: 2px solid black;
+    background-image: url(imges/place-01.jpg);
+    background-size: 100%;
+    border: 20px solid white;
+}
+.note2{
+    margin: 60px;
+    grid-area: g;
+    border: 2px solid black;
+    background-image: url(imges/place-03.jpg);
+    background-size: 100%;
+    border: 20px solid white;
+}
+.note3{
+    margin: 60px;
+    grid-area: h;
+    border: 2px solid black;
+    background-image: url(imges/place-02.jpg);
+    background-size: 100%;
+    border: 20px solid white;
+}
+.note4{
+    margin: 60px;
+    grid-area: i;
+    border: 2px solid black;
+    background-image: url(imges/place-03.jpg);
+    background-size: 100%;
+    border: 20px solid white;
+}
+.note5{
+    margin: 60px;
+    grid-area: j;
+    border: 2px solid black;
+    background-image: url(imges/place-04.jpg);
+    background-size: 100%;
+    border: 20px solid white;
+}
+.note6{
+    margin: 60px;
+    grid-area: k;
+    border: 2px solid black;
+    background-image: url(imges/place-01.jpg);
+    background-size: 100%;
+    border: 20px solid white;
+}
+.final{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31,54,70,255);
+    color: white;
+}
+.final div{
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: center;
+    align-items: center;
+}
